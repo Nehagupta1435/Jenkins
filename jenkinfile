@@ -44,7 +44,7 @@ pipeline {
         }
         stage('Deploy') {
             steps {
-                 sh 'aws s3 cp backend/target/student-registration-backend-0.0.1-SNAPSHOT.jar s3://student-app-09/'
+                 sh 'aws s3 cp backend/target/student-registration-backend-0.0.1-SNAPSHOT.jar s3://student-app-09-09/'
                 echo 'application deploy successfull'
             }
         }
